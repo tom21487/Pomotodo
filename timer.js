@@ -6,8 +6,8 @@ window.onload = function() {
   }
 
   let initConditions = {
-    minutes: 0,
-    seconds: 10,
+    minutes: 25,
+    seconds: 0,
   }
   
   let mode = "work";
@@ -83,11 +83,11 @@ window.onload = function() {
     let value = selector[selector.selectedIndex].value;
     mode = value;
     if (mode === "work") {
-      initConditions.minutes = 0;
-      initConditions.seconds = 10;
+      initConditions.minutes = 25;
+      initConditions.seconds = 0;
     } else if (mode === "rest") {
-      initConditions.minutes = 0;
-      initConditions.seconds = 3;
+      initConditions.minutes = 5;
+      initConditions.seconds = 0;
     }
     resetTimer();
   }

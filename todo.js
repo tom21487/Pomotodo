@@ -3,8 +3,8 @@ var currentTask = null;
 var audio = new Audio("beeps.mp3");
 
 window.onload = function() {
-    allTasks.push("Purchase stationary");
-    showTasks();
+  //allTasks.push("Purchase stationary");
+  showTasks();
 }
 
 function addTask() {

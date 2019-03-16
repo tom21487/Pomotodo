@@ -3,6 +3,10 @@
   src: url('segoeui.ttf') format('truetype');
 }
 
+select:focus, button:focus {
+  outline: none !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -27,22 +31,30 @@ main {
   display: inline-block;
 }
 
-#modeSelection {
-  border-radius: 3px;
-  border: 1px solid #707070;
-  width: 60px;
+.actionButtonHolder {
+  margin-top: 20px; 
+  width: 75vw;
   height: 30px;
-  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .actionButton {
-  position: relative;
-  margin-top: 20px;
   background-color: white;
   border: 1px solid #707070;
   border-radius: 3px;
-  width: 60px;
-  height: 30px;
+  width: 22%;
+  height: 100%;
+  font-size: 20px;
+}
+
+#modeSelection {
+  border-radius: 3px;
+  border: 1px solid #707070;
+  width: 22%;
+  height: 100%;
+  background-color: white;
+  font-size: 20px;
 }
 
 /*Task adder*/
@@ -50,13 +62,13 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  width: 68vw;
-  height: 30px;
+  width: 77vw;
+  height: 50px;
 }
 
 .taskAdder {
   position: relative;
-  width: 64vw;
+  width: 75vw;
   height: 100%;
 }
 
@@ -71,10 +83,7 @@ main {
   border: 1px solid #707070;
   border-right: 0;
   border-radius: 3px 0px 0px 3px;
-}
-
-select:focus, button:focus {
-  outline: none !important;
+  font-size: 20px;
 }
 
 button#add {
@@ -86,14 +95,7 @@ button#add {
   background-color: white;
   border-radius: 0px 3px 3px 0px;
   border: 1px solid #707070;
-}
-
-button#add:hover {
-  background-color: rgb(200, 200, 200);
-}
-
-button#add:active {
-  background-color: rgb(150, 150, 150);
+  font-size: 20px;
 }
 
 #taskArea {
@@ -102,8 +104,8 @@ button#add:active {
   margin-left: auto;
   margin-right: auto;
   /*height: 50vh;*/
-  height: 30vh;
-  width: 68vw;
+  width: 77vw;
+  height: 65vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -112,7 +114,7 @@ button#add:active {
 .task {
   position: relative;
   margin-bottom: 20px;
-  width: 64vw;
+  width: 74.5vw;
   /*height: 32px;*/
   height: 50px;
   border: 1px solid #707070;
@@ -143,6 +145,7 @@ button#add:active {
   border: none;
   overflow: scroll;
   white-space: nowrap;
+  font-size: 20px;
 }
 
 .buttonBox {
@@ -152,7 +155,7 @@ button#add:active {
   right: 0;
   padding-right: 5px;
   width: 40%;
-  height: 2rem;
+  height: 35px;
   top: 50%;
   transform: translateY(-50%);
   /*position: relative;
@@ -163,8 +166,8 @@ button#add:active {
 .buttonBox button {
   position: absolute;
   right: 0;
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   font-size: 10px;
   background-color: white;
   border: 1px solid #707070;
@@ -173,7 +176,8 @@ button#add:active {
 
 .buttonBox button span {
   position: relative;
-  bottom: 0.1rem;
+  bottom: 0.2rem;
+  font-size: 20px;
 }
 
 .buttonBox button#remove {
@@ -181,11 +185,11 @@ button#add:active {
 }
 
 .buttonBox button#complete {
-  margin-right: 40px;
+  margin-right: 42px;
 }
 
 .buttonBox button#push {
-  margin-right: 75px;
+  margin-right: 79px;
 }
 
 /* Not exactly the most elegant positioning, but oh well */
@@ -206,12 +210,7 @@ button#add:active {
   font-size: 1rem;
 }
 */
-button:hover {
-  background-color: rgb(200, 200, 200);
-}
 
-button:active {
+button:active, button#add:active {
   background-color: rgb(150, 150, 150);
 }
-
-
