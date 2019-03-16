@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('segoeui.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1rem;
+}
+
+button, select, input, #demo, h3 {
+  color: #707070;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+#demo {
+  font-size: 64px;
+  line-height: 5rem;
+}
+
+#mainTask {
+  display: inline-block;
+}
+
+#modeSelection {
+  border-radius: 3px;
+  border: 1px solid #707070;
+  width: 60px;
+  height: 30px;
+  background-color: white;
+}
+
+.actionButton {
+  position: relative;
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid #707070;
+  border-radius: 3px;
+  width: 60px;
+  height: 30px;
+}
+
+/*Task adder*/
+.taskAdderHolder {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 68vw;
+  height: 30px;
+}
+
+.taskAdder {
+  position: relative;
+  width: 64vw;
+  height: 100%;
+}
+
+#textbox {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  padding-left: 5px;
+  width: 60%;
+  height: 100%;
+  /*height: 26.2px;*/
+  border: 1px solid #707070;
+  border-right: 0;
+  border-radius: 3px 0px 0px 3px;
+}
+
+select:focus, button:focus {
+  outline: none !important;
+}
+
+button#add {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  border-radius: 0px 3px 3px 0px;
+  border: 1px solid #707070;
+}
+
+button#add:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+button#add:active {
+  background-color: rgb(150, 150, 150);
+}
+
+#taskArea {
+  box-sizing: border-box;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  /*height: 50vh;*/
+  height: 30vh;
+  width: 68vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/*Class for all tasks*/
+.task {
+  position: relative;
+  margin-bottom: 20px;
+  width: 64vw;
+  /*height: 32px;*/
+  height: 50px;
+  border: 1px solid #707070;
+  border-radius: 3px;
+  text-align: right;
+  /*
+  position: relative;
+  margin-bottom: 5px;
+  width: 300px;
+  height: 32px;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-align: right;
+  background-color: aqua;
+  */
+}
+
+.taskName {
+  position: absolute;
+  box-sizing: border-box;
+  width: 60%;
+  height: 2rem;
+  left: 0;
+  padding-left: 5px;
+  text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.buttonBox {
+  /*Learn your CSS positioning*/
+  position: absolute;
+  box-sizing: border-box;
+  right: 0;
+  padding-right: 5px;
+  width: 40%;
+  height: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  /*position: relative;
+  margin-left: 140px;
+  top: -17px;*/
+}
+
+.buttonBox button {
+  position: absolute;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  font-size: 10px;
+  background-color: white;
+  border: 1px solid #707070;
+  border-radius: 100%;
+}
+
+.buttonBox button span {
+  position: relative;
+  bottom: 0.1rem;
+}
+
+.buttonBox button#remove {
+  margin-right: 5px;
+}
+
+.buttonBox button#complete {
+  margin-right: 40px;
+}
+
+.buttonBox button#push {
+  margin-right: 75px;
+}
+
+/* Not exactly the most elegant positioning, but oh well */
+#circleShape {
+  position: relative;
+  /*left: -15%;*/
+  height: 10px;
+  width: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #707070;
+  border-radius: 100%;
+  background-color: white;
+}
+/*
+.x {
+  position: absolute;
+  font-size: 1rem;
+}
+*/
+button:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+button:active {
+  background-color: rgb(150, 150, 150);
+}
+
+

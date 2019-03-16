@@ -13,23 +13,20 @@
     <main>
       <h3 id="mainTask">Task: None</h3>
       
-      <div id="demo">25:00</div>
-
-      <div class="actionButtonHolder">
-        <button onclick="startTimer()" class="actionButton">Start</button>
-        <button onclick="stopTimer()" class="actionButton">Stop</button>
-        <button onclick="resetTimer()" class="actionButton">Reset</button>
-        <select id="modeSelection" onchange="changeModes()">
-          <option value="work">Work</option>
-          <option value="rest">Rest</option>
-        </select>
-      </div>
+      <div id="demo">0:10</div>
       
+      <button onclick="startTimer()" class="actionButton">Start</button>
+      <button onclick="stopTimer()" class="actionButton">Stop</button>
+      <button onclick="resetTimer()" class="actionButton">Reset</button>
+      <select id="modeSelection" onchange="changeModes()">
+        <option value="work">Work</option>
+        <option value="rest">Rest</option>
+      </select>
       </main>
 
     <div class="taskAdderHolder">
       <div class="taskAdder">
-        <input id="textbox" placeholder="Add a new task..."/><button id="add" onclick="addTask()">Add</button>
+        <input id="textbox" placeholder="Add a new task..."/><button id="add" onclick="addTask()">Add new task</button>
       </div>
     </div>
     <br />
