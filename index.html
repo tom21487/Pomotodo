@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pomodoro plus</title>
+    <script src="timer.js"></script>
+    <script src="todo.js"></script>
+    <!--link href="normalize.css" type="text/css" rel="stylesheet"-->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <h3 id="mainTask">Task: None</h3>
+      
+      <div id="demo">25:00</div>
+
+      <div class="actionButtonHolder">
+        <button onclick="startTimer()" class="actionButton">Start</button>
+        <button onclick="stopTimer()" class="actionButton">Stop</button>
+        <button onclick="resetTimer()" class="actionButton">Reset</button>
+        <select id="modeSelection" onchange="changeModes()">
+          <option value="work">Work</option>
+          <option value="rest">Rest</option>
+        </select>
+      </div>
+      
+      </main>
+
+    <div class="taskAdderHolder">
+      <div class="taskAdder">
+        <input id="textbox" placeholder="Add a new task..."/><button id="add" onclick="addTask()">Add</button>
+      </div>
+    </div>
+    <br />
+    <div id="taskArea"></div>
+  </body>
+</html>
